@@ -94,6 +94,8 @@ class tx_directmail_pi1 extends AbstractPlugin
                 break;
             case 'text':
                 // same as textpic
+            case 'textmedia':
+			    //same as textpic for fluid_styled_content in 7.6
             case 'textpic':
                 $lines[] = $this->getHeader();
                 if (($cType == 'textpic') && !($this->cObj->data['imageorient']&24)) {
